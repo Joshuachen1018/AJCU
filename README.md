@@ -8,7 +8,7 @@ Upload the CONTENTS of this folder to the repository root.
     thankyoupage/index.html    感謝頁
     ds/modernist/              stylesheet + component bundle  <-- must be uploaded
     assets/web/                photography
-    support.js, image-slot.js  runtime
+    support.js                 runtime
 
 No folder starts with an underscore any more, so GitHub Pages/Jekyll cannot
 skip it. If the pages ever render unstyled, ds/modernist/styles.css is missing.
@@ -23,3 +23,9 @@ Object.keys(google_tag_manager).filter(k=>k.startsWith('GTM'))
 - Privacy policy: 隱私權政策及個人資料蒐集告知事項, 全悅廣告股份有限公司.
 - 地圖導航 buttons open https://maps.app.goo.gl/hcXDf6vnao6gTHsn6
 - The form redirects to /thankyoupage/ on success.
+
+## Deploy build notes
+The 30 photographs are plain <img> tags in this build (they are editable
+image-slot placeholders in the authoring file). That removes image-slot.js and
+its /.image-slots.state.json request. The two hero images load eagerly; the rest
+are lazy. The favicon data URI is percent-encoded — raw spaces made it invalid.
