@@ -7,7 +7,9 @@
 <!-- End Google Tag Manager -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>安家藏玉</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Ccircle%20cx='16'%20cy='16'%20r='16'%20fill='%23cf5e96'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="180x180" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
 <script src="./support.js"></script>
 </head>
 <body>
@@ -507,7 +509,7 @@
         </label>
         <label style="display:flex;flex-direction:column;gap:10px">
           <span style="font-family:'Noto Sans TC',sans-serif;font-size:12.5px;font-weight:500;letter-spacing:.18em;color:var(--color-neutral-800)">居住縣市 CITY</span>
-          <select style="border-top:0;border-right:0;border-left:0;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--color-neutral-200);background:transparent;padding:10px 0;font-size:15px;font-family:'Noto Sans TC',sans-serif;color:var(--color-neutral-600);border-radius:0;appearance:none;background-image:url('data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2210%22 height=%228%22 viewBox=%220 0 10 8%22%3E%3Cpath d=%22M0 0h10L5 8z%22 fill=%22%23c48aa4%22/%3E%3C/svg%3E');background-repeat:no-repeat;background-position:right 1px center" name="居住縣市" value="{{ city }}" onChange="{{ onCity }}">
+          <select style="border-top:0;border-right:0;border-left:0;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--color-neutral-200);background:transparent;padding:10px 0;font-size:15px;font-family:'Noto Sans TC',sans-serif;color:var(--color-neutral-600);border-radius:0;appearance:none;background-image:url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%228%22%20viewBox%3D%220%200%2010%208%22%3E%3Cpath%20d%3D%22M0%200h10L5%208z%22%20fill%3D%22%23c48aa4%22%2F%3E%3C%2Fsvg%3E');background-repeat:no-repeat;background-position:right 1px center" name="居住縣市" value="{{ city }}" onChange="{{ onCity }}">
             <option value="">請選擇縣市</option>
             <sc-for list="{{ cities }}" as="c" hint-placeholder-count="6">
               <option value="{{ c }}">{{ c }}</option>
@@ -516,7 +518,7 @@
         </label>
         <label style="display:flex;flex-direction:column;gap:10px">
           <span style="font-family:'Noto Sans TC',sans-serif;font-size:12.5px;font-weight:500;letter-spacing:.18em;color:var(--color-neutral-800)">居住行政區 DISTRICT</span>
-          <select style="border-top:0;border-right:0;border-left:0;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--color-neutral-200);background:transparent;padding:10px 0;font-size:15px;font-family:'Noto Sans TC',sans-serif;color:var(--color-neutral-600);border-radius:0;appearance:none;background-image:url('data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2210%22 height=%228%22 viewBox=%220 0 10 8%22%3E%3Cpath d=%22M0 0h10L5 8z%22 fill=%22%23c48aa4%22/%3E%3C/svg%3E');background-repeat:no-repeat;background-position:right 1px center" name="居住行政區" value="{{ district }}" onChange="{{ onDistrict }}">
+          <select style="border-top:0;border-right:0;border-left:0;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:var(--color-neutral-200);background:transparent;padding:10px 0;font-size:15px;font-family:'Noto Sans TC',sans-serif;color:var(--color-neutral-600);border-radius:0;appearance:none;background-image:url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%228%22%20viewBox%3D%220%200%2010%208%22%3E%3Cpath%20d%3D%22M0%200h10L5%208z%22%20fill%3D%22%23c48aa4%22%2F%3E%3C%2Fsvg%3E');background-repeat:no-repeat;background-position:right 1px center" name="居住行政區" value="{{ district }}" onChange="{{ onDistrict }}">
             <option value="">{{ districtHint }}</option>
             <sc-for list="{{ districts }}" as="d" hint-placeholder-count="4">
               <option value="{{ d }}">{{ d }}</option>
