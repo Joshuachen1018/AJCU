@@ -565,6 +565,55 @@
     </div>
   </footer>
 
+  <section style="background:var(--color-bg)">
+    <div style="max-width:1000px;margin:0 auto;padding:clamp(30px,4.4vw,56px) 24px clamp(38px,5vw,64px);display:flex;flex-direction:column;gap:clamp(26px,3.4vw,42px);text-align:left">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(24px,3.4vw,48px)">
+        <div>
+          <div style="font-family:'Noto Sans TC',sans-serif;font-size:11px;font-weight:500;letter-spacing:.3em;color:var(--color-accent-700)">PROJECT DATA</div>
+          <h3 style="margin:10px 0 0;font-family:'Noto Serif TC',serif;font-weight:700;font-size:clamp(16px,1.9vw,20px);letter-spacing:.1em">建案基本資料</h3>
+          <div style="height:1px;background:var(--color-neutral-400);margin:14px 0 16px"></div>
+          <dl style="margin:0;display:grid;grid-template-columns:auto 1fr;gap:10px 16px;font-family:'Noto Sans TC',sans-serif;font-size:13.5px;line-height:1.85;letter-spacing:.04em">
+            <dt style="color:var(--color-neutral-700);white-space:nowrap">投資興建</dt>
+            <dd style="margin:0">安家卓越股份有限公司</dd>
+            <dt style="color:var(--color-neutral-700);white-space:nowrap">建築規劃</dt>
+            <dd style="margin:0">地上 21 層、地下 4 層，共 159 戶（含 1 間店面）</dd>
+            <dt style="color:var(--color-neutral-700);white-space:nowrap">基地位置</dt>
+            <dd style="margin:0">台北市中正區忠孝東路二段 64 巷 16 號</dd>
+            <dt style="color:var(--color-neutral-700);white-space:nowrap">基地面積</dt>
+            <dd style="margin:0">約 650 坪</dd>
+            <dt style="color:var(--color-neutral-700);white-space:nowrap">坪數規劃</dt>
+            <dd style="margin:0">22.5 坪~50.5 坪</dd>
+            <dt style="color:var(--color-neutral-700);white-space:nowrap">公設比</dt>
+            <dd style="margin:0">約 36%</dd>
+          </dl>
+        </div>
+        <div>
+          <div style="font-family:'Noto Sans TC',sans-serif;font-size:11px;font-weight:500;letter-spacing:.3em;color:var(--color-accent-700)">AGENCY</div>
+          <h3 style="margin:10px 0 0;font-family:'Noto Serif TC',serif;font-weight:700;font-size:clamp(16px,1.9vw,20px);letter-spacing:.1em">經紀業資訊</h3>
+          <div style="height:1px;background:var(--color-neutral-400);margin:14px 0 16px"></div>
+          <dl style="margin:0;display:grid;grid-template-columns:auto 1fr;gap:10px 16px;font-family:'Noto Sans TC',sans-serif;font-size:13.5px;line-height:1.85;letter-spacing:.04em">
+            <dt style="color:var(--color-neutral-700);white-space:nowrap">代銷經紀業名稱</dt>
+            <dd style="margin:0">全悅廣告股份有限公司</dd>
+            <dt style="color:var(--color-neutral-700);white-space:nowrap">經紀業特許字號</dt>
+            <dd style="margin:0">(100)營保基字代第 00180 號</dd>
+            <dt style="color:var(--color-neutral-700);white-space:nowrap">不動產經紀人</dt>
+            <dd style="margin:0">張雲清 (95) 北市經證字第 00630 號(換發)</dd>
+          </dl>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'Noto Sans TC',sans-serif;font-size:11px;font-weight:500;letter-spacing:.3em;color:var(--color-accent-700)">DISCLAIMER</div>
+        <h3 style="margin:10px 0 0;font-family:'Noto Serif TC',serif;font-weight:700;font-size:clamp(16px,1.9vw,20px);letter-spacing:.1em">免責聲明</h3>
+        <div style="height:1px;background:var(--color-neutral-400);margin:14px 0 16px"></div>
+        <ol style="margin:0;padding-left:1.5em;display:flex;flex-direction:column;gap:10px;font-family:'Noto Sans TC',sans-serif;font-size:13px;line-height:1.95;letter-spacing:.03em;color:var(--color-neutral-800);text-wrap:pretty">
+          <li>本網站所載之基地面積、公設比、格局圖、室內坪數、建材配備等數據僅供參考，實際內容以主管機關最後核准之完工圖說及買賣雙方簽訂之正式不動產買賣契約書為準。</li>
+          <li>廣告內容中所提及之周邊環境、步行時間、車程及公共設施距離等，可能因實際路況、天候或未來規劃而有所差異，本公司保留修改之權利。</li>
+          <li>本網頁各項圖片為示意參考或電腦合成模擬圖，實際景觀與裝潢配置以現場實際狀況為準。</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
   <sc-if value="{{ privacyOpen }}" hint-placeholder-val="{{ false }}">
     <div onClick="{{ closePrivacy }}" style="position:fixed;inset:0;z-index:200;background:rgba(32,29,30,.62);display:flex;align-items:center;justify-content:center;padding:clamp(12px,3vw,40px)">
       <div onClick="{{ stopClose }}" style="position:relative;width:100%;max-width:760px;max-height:86vh;overflow-y:auto;-webkit-overflow-scrolling:touch;background:#fff;padding:clamp(24px,4vw,48px) clamp(18px,4vw,48px) clamp(28px,4vw,48px)">
