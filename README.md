@@ -24,22 +24,15 @@ Object.keys(google_tag_manager).filter(k=>k.startsWith('GTM'))
 - 地圖導航 buttons open https://maps.app.goo.gl/hcXDf6vnao6gTHsn6
 - The form redirects to /thankyoupage/ on success.
 
-## Hero video
-The hero holds for 1s with scrolling locked, then slides up to reveal a
-self-hosted mp4 that autoplays (unmuted where the browser allows it, muted
-otherwise). Scrolling during the hold reveals it early and counts as the user
-gesture that permits sound. Two files, one per breakpoint:
+## Hero
+Static hero images, no video:
 
-    assets/web/hero-reel-desktop.mp4   > 700px
-    assets/web/hero-reel-mobile.mp4    <= 700px
+    assets/web/hero-art-web.jpg        > 700px (with hero-lockup.png over it)
+    assets/web/hero-poster-mobile.jpg  <= 700px
 
-Only the matching breakpoint's file is fetched (preload="none" + data-src).
-Both are large (~60MB) — they are under GitHub's 100MB per-file limit but
-above the 50MB warning threshold, and Git LFS is NOT used. Re-encoding them
-smaller is the single biggest win available on this page.
-
-Sound toggle bottom-left, tap the video to pause, blurred overlay with a play
-button on pause or end.
+The mp4 hero reels and their scroll-lock/autoplay logic were removed. The two
+assets/web/hero-reel-*.mp4 files are no longer referenced and can be deleted
+from the repository.
 
 ## Deploy build notes
 The 30 photographs are plain <img> tags in this build (they are editable
